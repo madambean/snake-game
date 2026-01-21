@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body { background: #222; margin: 0; overflow: hidden; }
+        canvas { display: block; margin: 40px auto 10px auto; background: #111; border: 2px solid #333; }
+        h1 { color: #fff; text-align: center; font-family: Arial, sans-serif; }
+        #controls { text-align: center; margin-bottom: 10px; }
+        #restartBtn { font-size: 18px; padding: 5px 20px; margin: 0 10px; }
+        #speedSelect { font-size: 16px; }
+        #ranking { color: #fff; text-align: center; font-family: Arial, sans-serif; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Snake Game</h1>
+    <div id="controls">
+        <button id="restartBtn">Restart</button>
+        <label for="speedSelect" style="color:#fff;">Speed: </label>
+        <select id="speedSelect">
+            <option value="150">느림</option>
+            <option value="100" selected>보통</option>
+            <option value="60">빠름</option>
+            <option value="30">매우 빠름</option>
+        </select>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="ranking"></div>
+    <script src="game.js"></script>
+</body>
+</html>
